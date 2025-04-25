@@ -1,0 +1,5 @@
+SELECT sub.email from (
+    SELECT Email , Count(*) as cnt
+From Person
+Group by email
+having count(*)>1) as sub
