@@ -1,0 +1,5 @@
+SELECT em.name as employee
+From employee em
+join employee ep 
+on em.managerId = ep.id
+and em.salary > ep.salary
