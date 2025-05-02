@@ -1,0 +1,5 @@
+SELECT c.name as Customers
+From customers as c
+Left join orders as o
+on c.id=o.customerid
+where o.customerId is Null
